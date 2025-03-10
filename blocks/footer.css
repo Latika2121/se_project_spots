@@ -1,6 +1,8 @@
 .footer {
   display: flex;
   justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-content {
@@ -10,4 +12,5 @@
   line-height: 16px;
   color: #212121;
   opacity: 70%;
+  margin: 0;
 }

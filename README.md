@@ -49,4 +49,10 @@ A collection of captivating images that showcase 6 different scenes, including a
 
 - This website is deployed to Github pages.
 
-  [Deployment link] (https://github.com/Latika2121/se_project_spots)
+  [Deployment link] (https://latika2121.github.io/se_project_spots/)
+
+  #Spots
+
+  Video recording for sprint 3 project
+
+  [Video Link] (https://drive.google.com/file/d/1QuuQsPoBROuHaNKpXUKVmOPrKQ4zhh_p/view?usp=drive_link)
