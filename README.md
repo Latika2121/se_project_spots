@@ -49,7 +49,7 @@ A collection of captivating images that showcase 6 different scenes, including a
 
 - This website is deployed to Github pages.
 
-  [Deployment link] (https://latika2121.github.io/se_project_spots/)
+  [Deployment link](https://latika2121.github.io/se_project_spots/)
 
   #Spots
 

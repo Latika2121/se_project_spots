@@ -10,10 +10,13 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
+  opacity: 0;
+  transition: visiblity 0.3s, opacity 0.3s;
 }
 
 .modal_is-opened {
   visibility: visible;
+  opacity: 1;
 }
 
 .modal__container {
@@ -25,17 +28,22 @@
   position: relative;
 }
 
+.modal__close-btn:hover {
+  opacity: 0.7;
+}
+
 .modal__close-btn {
   position: absolute;
   top: 32px;
   right: 50px;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 
 .modal__title {
   margin: 0 0 32px;
-  font-family: poppins, sans-serif;
+  font-family: poppins, sans-serif, Arial, Helvetica;
   font-size: 32px;
   font-weight: 500;
 }
@@ -67,10 +75,11 @@
   font-size: 20px;
   font-weight: 500;
   gap: 10px;
+  box-sizing: border-box;
 }
 
-modal__input::placeholder {
-  color: 212121;
+.modal__input::placeholder {
+  color: #212121;
   font-family: poppins, sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -107,3 +116,4 @@ modal__input::placeholder {
   .modal__container {
     padding: 18px 32px 18px 32px;
   }
+}

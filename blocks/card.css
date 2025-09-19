@@ -23,7 +23,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  /*max-width: 353px;*/
+  max-width: 353px;
 }
 
 .card__like-button {
@@ -44,6 +44,7 @@
 @media screen and (max-width: 627px) {
   .card__image {
     height: 288px;
+    max-width: 235px;
   }
 
   .card__title {
