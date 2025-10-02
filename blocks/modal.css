@@ -39,6 +39,7 @@
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: transparent;
   border: none;
   outline: none;
   opacity: 40%;
@@ -121,5 +122,12 @@
   }
   .modal__container {
     padding: 22px 12px 12px;
+  }
+  .modal__title {
+    font-size: 16px;
+  }
+  .modal__close-btn {
+    top: 12px;
+    right: 12px;
   }
 }

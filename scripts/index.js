@@ -43,22 +43,33 @@ newPostCloseBtn.addEventListener("click", function () {
   closeModal(newPostModal);
 });
 
-function handleAddCardSubmit(evt) {
-  evt.preventDefault();
+const addCardFormElement = document.querySelector(
+  "#new-post-modal .modal__form"
+);
+const nameInput = document.querySelector("#card-name-input");
+const linkInput = document.querySelector("#card-image-input");
 
-  const formData = new FormData(evt.target);
-  console.log(Object.fromEntries(formData));
-
-  closeModal(newPostModal);
-}
-
-newPostForm.addEventListener("submit", handleAddCardSubmit);
+addCardFormElement.addEventListener("submit", handleAddCardSubmit);
 
 function handleEditProfileSubmit(evt) {
   evt.preventDefault();
+
   closeModal(editProfileModal);
   profileNameEl.textContent = editProfileNameInput.value;
   profileDescriptionEl.textContent = editProfileDescriptionInput.value;
 }
 
+function handleAddCardSubmit(evt) {
+  evt.preventDefault();
+
+  const cardData = {
+    name: nameInput.value,
+    link: linkInput.value,
+  };
+
+  console.log(cardData);
+  closeModal(newPostModal);
+}
+
 editProfileForm.addEventListener("submit", handleEditProfileSubmit);
+addCardFormElement.addEventListener("submit", handleAddCardSubmit);
